@@ -6,24 +6,24 @@ const Scontainer = styled.div`
     width: 60vw;
     height: 60vh;
     background-color: rgb(24, 79, 94);
+    justify-content:space-between;
+    border-radius: 10px;
 `
 
-const Sleft = styled.div`
+const SBox = styled.div`
     display:flex;
     flex-direction:column;
-    width: 30%;
-    height: 45%;
+    width: 33%;
+    height: 100%;
+    justify-content:center;
 `
 
-const Sright = styled.div`
-    display:flex;
-    flex-direction:column;
-    width: 30%;
-    height: 45%;
-`
 
 const Slight = styled.div`
     background-color: rgb(91, 124, 133);
+    margin: 10px;
+    border-radius: 10px;
+    height: 50%;
 `
 
 
@@ -31,18 +31,25 @@ const Slight = styled.div`
 function LightMain() {
     return (
         <Scontainer>
-            <Sleft>
+            <SBox>
                 <Slight>
-
+                    d
                 </Slight>
-
-            </Sleft>
+                <Slight>
+                    d
+                </Slight>
+            </SBox>
             <div>
-
+d
             </div>
-            <Sright>
-                
-            </Sright>
+            <SBox>
+                <Slight>
+                    d
+                </Slight>
+                <Slight>
+                    d
+                </Slight>
+            </SBox>
             
         </Scontainer>
     );
