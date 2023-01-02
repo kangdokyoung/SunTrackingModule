@@ -11,7 +11,7 @@ const Main = ()=> {
 
     return (
         <Scontainer>
-            <LightMain />
+            {/* <LightMain /> */}
         </Scontainer>
     );
 }
