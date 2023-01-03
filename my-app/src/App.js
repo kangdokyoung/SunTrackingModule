@@ -1,3 +1,4 @@
+import { RecoilRoot } from "recoil";
 import { createGlobalStyle } from "styled-components";
 import Main from "./component/main/Main";
 
@@ -13,9 +14,12 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <RecoilRoot>
+
       <div className="App">
         <Main />
       </div>
+      </RecoilRoot>
     </>
   );
 }

@@ -1,10 +1,12 @@
 import React from 'react';
+import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
+import { pictureList } from '../../atom/atom';
 
 const Scontainer = styled.div`
     display:flex;
-    width: 60vw;
-    height: 60vh;
+    width: 80vw;
+    height: 65vh;
     background-color: rgb(24, 79, 94);
     justify-content:space-between;
     border-radius: 10px;
@@ -58,22 +60,14 @@ const Simgcontainer = styled.div`
 
 
 function LightMain() {
-
-    const pictureList = [
-        "https://ifh.cc/g/jXnWcP.png", // 나침반
-        "https://ifh.cc/g/Vo3z5b.png", // 습도
-        "https://ifh.cc/g/vcKxk7.png", // 태양
-        "https://ifh.cc/g/Ckn4gr.png", // 태양추적
-        "https://ifh.cc/g/0MYVFz.png", // 태양추적모듈
-        "https://ifh.cc/g/qbjMso.png", // 온도
-    ]
+    const [picture,] = useRecoilState(pictureList);
 
     return (
         <Scontainer>
             <SBox>
                 <Slight>
                     <StitleBox>
-                        <Simg alt='sun' src={pictureList[2]} />
+                        <Simg alt='sun' src={picture[2]} />
                         <SsubTitle>
                             1광도
                         </SsubTitle>
@@ -81,7 +75,7 @@ function LightMain() {
                 </Slight>
                 <Slight>
                 <StitleBox>
-                        <Simg alt='sun' src={pictureList[2]} />
+                        <Simg alt='sun' src={picture[2]} />
                         <SsubTitle>
                             4광도
                         </SsubTitle>
@@ -89,12 +83,12 @@ function LightMain() {
                 </Slight>
             </SBox>
             <Simgcontainer>
-                <SmiddleImg alt='middleimg' src={pictureList[3]} />
+                <SmiddleImg alt='middleimg' src={picture[3]} />
             </Simgcontainer>
             <SBox>
                 <Slight>
                 <StitleBox>
-                        <Simg alt='sun' src={pictureList[2]} />
+                        <Simg alt='sun' src={picture[2]} />
                         <SsubTitle>
                             2광도
                         </SsubTitle>
@@ -102,7 +96,7 @@ function LightMain() {
                 </Slight>
                 <Slight>
                 <StitleBox>
-                        <Simg alt='sun' src={pictureList[2]} />
+                        <Simg alt='sun' src={picture[2]} />
                         <SsubTitle>
                             3광도
                         </SsubTitle>
