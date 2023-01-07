@@ -58,6 +58,15 @@ const Simgcontainer = styled.div`
     justify-content:center;
 `
 
+const SmainContent = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80%;
+    color:white;
+    font-size:80px;
+`
+
 
 function LightMain() {
     const [picture,] = useRecoilState(pictureList);
@@ -72,14 +81,16 @@ function LightMain() {
                             1광도
                         </SsubTitle>
                     </StitleBox>
+                    <SmainContent> 58</SmainContent>
                 </Slight>
                 <Slight>
-                <StitleBox>
+                    <StitleBox>
                         <Simg alt='sun' src={picture[2]} />
                         <SsubTitle>
                             4광도
                         </SsubTitle>
                     </StitleBox>
+                    <SmainContent> 62</SmainContent>
                 </Slight>
             </SBox>
             <Simgcontainer>
@@ -93,6 +104,7 @@ function LightMain() {
                             2광도
                         </SsubTitle>
                     </StitleBox>
+                    <SmainContent> 61</SmainContent>
                 </Slight>
                 <Slight>
                 <StitleBox>
@@ -101,6 +113,7 @@ function LightMain() {
                             3광도
                         </SsubTitle>
                     </StitleBox>
+                    <SmainContent> 59</SmainContent>
                 </Slight>
             </SBox>
             

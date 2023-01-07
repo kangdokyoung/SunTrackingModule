@@ -2,6 +2,7 @@ import React from 'react';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { pictureList } from '../../atom/atom';
+import Chart from 'react-google-charts';
 
 const Scontainer = styled.div`
     display:flex;
@@ -38,6 +39,7 @@ const Simg = styled.img`
 
 function TempHum() {
     const [picture] = useRecoilState(pictureList);
+
     return (
         <Scontainer>
             <Sbox>
@@ -47,7 +49,12 @@ function TempHum() {
                         습도
                     </SsubTitle>
                 </StitleBox>
-                그래프
+                <Chart
+                    chartType="LineChart"
+                    data={[['1', 'humidity'], [1,2], [2,3], [3,4]]}
+                    height='300px'
+                    width='100%'
+                />
             </Sbox>
             <Sbox>
             <StitleBox>

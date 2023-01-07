@@ -43,13 +43,13 @@ function LatLng() {
             <Simg alt='SunTrackModule' src={picture[4]} />
             <Sinfo>
                 <Stitle>ㅇ광도</Stitle>
-                <Sdata>ㅇ</Sdata>
+                <Sdata>ㅇ 60</Sdata>
                 <Stitle>ㅇ온도</Stitle>
-                <Sdata>ㅇ</Sdata>
+                <Sdata>ㅇ 12</Sdata>
                 <Stitle>ㅇ습도</Stitle>
-                <Sdata>ㅇ</Sdata>
+                <Sdata>ㅇ 21</Sdata>
                 <Stitle>ㅇ각도</Stitle>
-                <Sdata>ㅇ</Sdata>
+                <Sdata>ㅇ 49</Sdata>
             </Sinfo>
         </Scontainer>
     );

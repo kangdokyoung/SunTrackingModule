@@ -19,7 +19,7 @@ const Simg = styled.img`
 
 const Stext = styled.div`
     color:white;
-    font-size: 25px;
+    font-size: 50px;
     margin: 5px;
     font-weight: medium;
 `
@@ -30,10 +30,7 @@ function Info() {
     return (
         <Scontainer>
             <Simg alt='compass' src={picture[0]} />
-            <Stext>동 :</Stext>
-            <Stext>서 :</Stext>
-            <Stext>남 :</Stext>
-            <Stext>북 :</Stext>
+            <Stext>동남쪽</Stext>
         </Scontainer>
     );
 }
