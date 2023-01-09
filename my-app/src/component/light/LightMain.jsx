@@ -2,7 +2,7 @@ import React from 'react';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { pictureList } from '../../atom/atom';
-
+import { light_1, light_2,light_3,light_4 } from '../../atom/atom';
 const Scontainer = styled.div`
     display:flex;
     width: 80vw;
@@ -70,6 +70,10 @@ const SmainContent = styled.div`
 
 function LightMain() {
     const [picture,] = useRecoilState(pictureList);
+    const [light1, ] = useRecoilState(light_1);
+    const [light2, ] = useRecoilState(light_2);
+    const [light3, ] = useRecoilState(light_3);
+    const [light4, ] = useRecoilState(light_4);
 
     return (
         <Scontainer>
@@ -81,7 +85,7 @@ function LightMain() {
                             1광도
                         </SsubTitle>
                     </StitleBox>
-                    <SmainContent> 58</SmainContent>
+                    <SmainContent>{light1}</SmainContent>
                 </Slight>
                 <Slight>
                     <StitleBox>
@@ -90,7 +94,7 @@ function LightMain() {
                             4광도
                         </SsubTitle>
                     </StitleBox>
-                    <SmainContent> 62</SmainContent>
+                    <SmainContent> {light4}</SmainContent>
                 </Slight>
             </SBox>
             <Simgcontainer>
@@ -104,7 +108,7 @@ function LightMain() {
                             2광도
                         </SsubTitle>
                     </StitleBox>
-                    <SmainContent> 61</SmainContent>
+                    <SmainContent>{light2}</SmainContent>
                 </Slight>
                 <Slight>
                 <StitleBox>
@@ -113,7 +117,7 @@ function LightMain() {
                             3광도
                         </SsubTitle>
                     </StitleBox>
-                    <SmainContent> 59</SmainContent>
+                    <SmainContent>{light3}</SmainContent>
                 </Slight>
             </SBox>
             

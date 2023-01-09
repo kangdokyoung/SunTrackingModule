@@ -13,3 +13,43 @@ export const pictureList = atom({
         "https://ifh.cc/g/qbjMso.png", // 온도
     ]
 })
+
+export const angle = atom({
+    key : 'info/angle',
+    default: 0,
+})
+
+export const temperature = atom({
+    key : 'info/temperature',
+    default: 0,
+})
+
+export const humidity = atom({
+    key : 'info/humidity',
+    default: 0,
+})
+
+export const magnitude = atom({
+    key : 'info/magnitude',
+    default: 0,
+})
+
+export const light_1 = atom({
+    key : 'info/light1',
+    default: 0,
+})
+
+export const light_2 = atom({
+    key : 'info/light2',
+    default: 0,
+})
+
+export const light_3 = atom({
+    key : 'info/light3',
+    default: 0,
+})
+
+export const light_4 = atom({
+    key : 'info/light4',
+    default: 0,
+})

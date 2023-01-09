@@ -2,7 +2,7 @@ import React from 'react';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { pictureList } from '../../atom/atom';
-
+import { angle,humidity,magnitude,temperature } from '../../atom/atom';
 const Scontainer = styled.div`
     display:flex;
     align-items:center;
@@ -38,18 +38,23 @@ const Sdata = styled.div`
 
 function LatLng() {
     const [picture] = useRecoilState(pictureList);
+    const [ang, ] = useRecoilState(angle);
+    const [temp, ] = useRecoilState(temperature);
+    const [hum, ] = useRecoilState(humidity);
+    const [mag, ] = useRecoilState(magnitude);
+
     return (
         <Scontainer>
             <Simg alt='SunTrackModule' src={picture[4]} />
             <Sinfo>
                 <Stitle>ㅇ광도</Stitle>
-                <Sdata>ㅇ 60</Sdata>
+                <Sdata>ㅇ {mag}</Sdata>
                 <Stitle>ㅇ온도</Stitle>
-                <Sdata>ㅇ 12</Sdata>
+                <Sdata>ㅇ {temp}</Sdata>
                 <Stitle>ㅇ습도</Stitle>
-                <Sdata>ㅇ 21</Sdata>
+                <Sdata>ㅇ {hum}</Sdata>
                 <Stitle>ㅇ각도</Stitle>
-                <Sdata>ㅇ 49</Sdata>
+                <Sdata>ㅇ {ang}</Sdata>
             </Sinfo>
         </Scontainer>
     );
