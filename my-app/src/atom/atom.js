@@ -14,6 +14,11 @@ export const pictureList = atom({
     ]
 })
 
+export const getData = atom({
+    key: 'getData',
+    default: [],
+})
+
 export const angle = atom({
     key : 'info/angle',
     default: 0,

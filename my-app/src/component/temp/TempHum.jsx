@@ -88,7 +88,7 @@ function TempHum() {
                 <Chart
                     chartType="LineChart"
                     data={[['date', 'humidity'], ...humChart]}
-                    height='90%'
+                    height='85%'
                     width='100%'
                 />
             </Sbox>
@@ -102,7 +102,7 @@ function TempHum() {
                 <Chart
                     chartType="LineChart"
                     data={[['date', 'temperature'], ...temChart]}
-                    height='90%'
+                    height='85%'
                     width='100%'
                 />
             </Sbox>
