@@ -17,20 +17,12 @@ const Simg = styled.img`
     margin: 10px;
 `
 
-const Stext = styled.div`
-    color:white;
-    font-size: 50px;
-    margin: 5px;
-    font-weight: medium;
-`
-
 function Info() {
     const [picture] = useRecoilState(pictureList);
 
     return (
         <Scontainer>
             <Simg alt='compass' src={picture[0]} />
-            <Stext>동남쪽</Stext>
         </Scontainer>
     );
 }
